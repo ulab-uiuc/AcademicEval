@@ -8,6 +8,9 @@
     <a href="https://arxiv.org/abs/xxx">
         <img alt="Build" src="https://img.shields.io/badge/arXiv-xx.xx-red?logo=arxiv">
     </a>
+    <a href="https://huggingface.co/datasets/ulab-ai/AcademicEval">
+        <img alt="HuggingFace" src="https://img.shields.io/badge/%F0%9F%A4%97-AcademicEval-yellow">
+    </a>
     <!-- <a href="xxx">
         <img alt="Build" src="https://img.shields.io/badge/Twitter-black?logo=X">
     </a> -->
@@ -27,27 +30,28 @@
 </p>
 
 
-<p align="center">
-    <a href="https://ulab-uiuc.github.io/AcademicEval/">🌐 Project Page</a> |
-    <a href="https://arxiv.org/abs/xxx">📜 arXiv</a>
-    <!-- <a href="xxx">📮 Twitter Post</a> -->
-<p>
-
-
-
-## News
-
-**[2025.10]** 🌟 AcademicEval was released.
-
-
 
 
 <div align=center> <img src="./figures/model.png" width = 85% height="85%"/> </div>
 
 
+
+## News
+
+
+**[2025.10]** 🌟 AcademicEval was released.
+
+
+**[2025.09]** 🎉 **AcademicEval was accepted by TMLR 2025.**
+
+
+
+## Introduction
+
+
 We proposed <b><i>AcademicEval</i></b>, a live benchmark for evaluating LLMs over long-context generation tasks. <b><i>AcademicEval</i></b> adopts papers on arXiv to introduce several acadeic writing tasks with long-context inputs, <i>i.e.</i>, <b><i>Title, Abstract, Introduction, Related Work</i></b>, wich covers a wide range of abstraction levels and require no manual labeling. 
 
-Comparing to existing long-context LLM benchmarks, our Comparing to existing long-context LLM benchmarks, our AcademicEval offers flexible length, automatic annotation, hierarchical abstraction, few-shot demonstrations, and live updates without data leakage risks. offers flexible length, automatic annotation, hierarchical abstraction, few-shot demonstrations, and live updates without data leakage risks.
+Comparing to existing long-context LLM benchmarks, our Comparing to existing long-context LLM benchmarks, our AcademicEval offers flexible length, automatic annotation, hierarchical abstraction, few-shot demonstrations, and live updates without data leakage risks. 
 
 
 
@@ -125,7 +129,7 @@ Comparing to existing long-context LLM benchmarks, our Comparing to existing lon
 
 <!-- 🔥❗✅❎ -->
 
-<!-- **❗❗❗You can download our collected data at [AcademicEval-HF](https://huggingface.co/datasets/AcademicEval/AcademicEval)** -->
+**❗❗❗You can download our collected data at [AcademicEval](https://huggingface.co/datasets/ulab-ai/AcademicEval)**
 
 
 ## 📌Environment Setup
@@ -393,13 +397,12 @@ python exp_comparison.py --setting related_53K_G --llm_model meta-llama/Llama-3-
 
 
 
-<!-- ## 📍Benchmark Construction
+## 📍Benchmark Construction
 
-> **More will coming soon.**
 
 We give a general example for constructing AcademicEval benchmark in this section.
 
-**Note: The initial collection process will be time-consuming, and you can key in "ctrl+c" to stop the collection**
+**Note: The initial collection process will be time-consuming**
 
 ### Co-author Graph Construction
 
@@ -420,12 +423,18 @@ python refine_graph.py
 ```
 
 
-### Sample Construction
+### Live Update
 
 
-### Live Update -->
+You can refer to `live_update.py` for updating the collected co-author graph.
 
 
+
+## Other Awesome Works
+
+- [GoR](https://arxiv.org/abs/2410.11001): Graph of Records: Boosting Retrieval Augmented Generation for Long-context Summarization with Graphs. [![[code]](https://img.shields.io/github/stars/ulab-uiuc/GoR)](https://github.com/ulab-uiuc/GoR)
+
+- [Thought Retriever](https://openreview.net/pdf?id=sOSAu0XQcI): Thought-Retriever: Don’t Just Retrieve Raw Data, Retrieve Thoughts. [![[code]](https://img.shields.io/github/stars/ulab-uiuc/Thought-Retriever)](https://github.com/ulab-uiuc/Thought-Retriever)
 
 
 
