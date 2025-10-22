@@ -2,11 +2,8 @@
 
 
 <p align="center">
-    <a href="https://ulab-uiuc.github.io/AcademicEval/">
-        <img alt="Build" src="https://img.shields.io/badge/Project-Page-blue">
-    </a>
-    <a href="https://arxiv.org/abs/xxx">
-        <img alt="Build" src="https://img.shields.io/badge/arXiv-xx.xx-red?logo=arxiv">
+    <a href="https://arxiv.org/abs/2510.17725">
+        <img alt="Build" src="https://img.shields.io/badge/arXiv-2510.17725-red?logo=arxiv">
     </a>
     <a href="https://huggingface.co/datasets/ulab-ai/AcademicEval">
         <img alt="HuggingFace" src="https://img.shields.io/badge/%F0%9F%A4%97-AcademicEval-yellow">
@@ -445,7 +442,7 @@ You can refer to `live_update.py` for updating the collected co-author graph.
 @article{AcademicEval,
   title={AcademicEval: Live Long-Context LLM Benchmark},
   author={Haozhen Zhang and Tao Feng and Pengrui Han and Jiaxuan You},
-  journal={arXiv preprint arXiv:xx},
+  journal={arXiv preprint arXiv:2510.17725},
   year={2025}
 }
 ```
